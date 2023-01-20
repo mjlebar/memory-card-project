@@ -41,6 +41,7 @@ const covers = {
   cover18,
   cover19,
 };
+// seems like there should be a more efficient way to do this, but this allows us to select the appropriate cover usinng the album index (ie its release order)
 
 function Card(props) {
   const cover = covers[`cover${props.index}`];
@@ -51,5 +52,6 @@ function Card(props) {
     </div>
   );
 }
+// the individual cards in the grid - contains a logo and an album name, when clicked calls the checkAlbum function in app
 
 export { Card };

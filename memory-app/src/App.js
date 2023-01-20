@@ -26,6 +26,7 @@ function App() {
     { name: "Vapor Trails", clicked: false, index: 16 },
     { name: "Power Windows", clicked: false, index: 10 },
   ]);
+  // initializes the array of albums, including information about whether the ablum has been clicked yet and what order it comes in the albums (this is not reflected in the game grid - it's just so we can retrieve the correct cover)
 
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
@@ -44,15 +45,19 @@ function App() {
           setScore(score + 1);
         }
       }
+      // go through the entries until we find the one matching. If we've already clicked it, reset the game. Otherwise, increment the score and best score, and mark the album as clicked.
     }
     setEntries(shuffleArray(entries));
+    // resets the game grid
   };
+  // this is passed as a click listener to the gameboard cards
 
   function resetClicked() {
     for (let i = 0; i < entries.length; i++) {
       entries[i].clicked = false;
     }
   }
+  // helper function, resets the game by making all entries unclicked
 
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -63,6 +68,7 @@ function App() {
     }
     return array;
   };
+  // helper function to shuffle the array, taken from https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj#:~:text=The%20first%20and%20simplest%20way,)%20%3D%3E%200.5%20%2D%20Math.
 
   return (
     <div className="App">
