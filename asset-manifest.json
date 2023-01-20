@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/memory-card-project/static/css/main.2a98c01a.css",
+    "main.js": "/memory-card-project/static/js/main.ee869563.js",
+    "static/media/cover17.jpeg": "/memory-card-project/static/media/cover17.b47f7b7c1c4a7ea99bd0.jpeg",
+    "static/media/cover4.jpeg": "/memory-card-project/static/media/cover4.1b40bf2b463dd60ce42a.jpeg",
+    "static/media/cover13.jpeg": "/memory-card-project/static/media/cover13.afa843f05cb4af4715cf.jpeg",
+    "static/media/cover18.jpeg": "/memory-card-project/static/media/cover18.c232cf1010ba7f29a921.jpeg",
+    "static/media/cover12.jpeg": "/memory-card-project/static/media/cover12.2a75a73d1dda3154858d.jpeg",
+    "static/media/cover0.jpeg": "/memory-card-project/static/media/cover0.3ce67d8cf7c9b091907d.jpeg",
+    "static/media/cover10.jpeg": "/memory-card-project/static/media/cover10.460c073d09865f3eb5ec.jpeg",
+    "static/media/cover2.jpeg": "/memory-card-project/static/media/cover2.04916b7d012444b299d6.jpeg",
+    "static/media/cover15.jpeg": "/memory-card-project/static/media/cover15.19934d61ea3ea6efa00d.jpeg",
+    "static/media/cover6.jpeg": "/memory-card-project/static/media/cover6.e8d3ec58e5d8181b702b.jpeg",
+    "static/media/cover5.jpeg": "/memory-card-project/static/media/cover5.4c64fc2c4e8f215aa921.jpeg",
+    "static/media/cover1.jpeg": "/memory-card-project/static/media/cover1.dc1a58559d17d947819e.jpeg",
+    "static/media/cover8.jpeg": "/memory-card-project/static/media/cover8.5010d6aa59fde64dfb20.jpeg",
+    "static/media/cover7.jpeg": "/memory-card-project/static/media/cover7.22f13a56252126be766c.jpeg",
+    "static/media/cover9.jpeg": "/memory-card-project/static/media/cover9.0e7fcd61a6a0b3401a19.jpeg",
+    "static/media/cover3.jpeg": "/memory-card-project/static/media/cover3.8171c579fdeb9a1a207c.jpeg",
+    "static/media/cover16.jpeg": "/memory-card-project/static/media/cover16.738a80782e9c4ec015c1.jpeg",
+    "static/media/cover19.jpeg": "/memory-card-project/static/media/cover19.cf957cfbcf61a27ca965.jpeg",
+    "static/media/cover14.jpeg": "/memory-card-project/static/media/cover14.9dd4196b303192c51684.jpeg",
+    "static/media/cover11.jpeg": "/memory-card-project/static/media/cover11.5e80d4587003d93051ee.jpeg",
+    "index.html": "/memory-card-project/index.html",
+    "main.2a98c01a.css.map": "/memory-card-project/static/css/main.2a98c01a.css.map",
+    "main.ee869563.js.map": "/memory-card-project/static/js/main.ee869563.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a98c01a.css",
+    "static/js/main.ee869563.js"
+  ]
+}
