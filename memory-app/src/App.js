@@ -5,24 +5,26 @@ import { useState } from "react";
 
 function App() {
   const [entries, setEntries] = useState([
-    { name: "Fly By Night", clicked: false },
-    { name: "2112", clicked: false },
-    { name: "Hemispheres", clicked: false },
-    { name: "Moving Pictures", clicked: false },
-    { name: "Clockwork Angels", clicked: false },
-    { name: "Counterparts", clicked: false },
-    { name: "Permanent Waves", clicked: false },
-    { name: "Rush", clicked: false },
-    { name: "Signals", clicked: false },
-    { name: "Roll the Bones", clicked: false },
-    { name: "A Farewell to Kings", clicked: false },
-    { name: "Grace Under Pressure", clicked: false },
-    { name: "Test for Echo", clicked: false },
-    { name: "Presto", clicked: false },
-    { name: "Snakes and Arrows", clicked: false },
-    { name: "Caress of Steel", clicked: false },
-    { name: "Hold Your Fire", clicked: false },
-    { name: "Feedback", clicked: false },
+    { name: "Fly By Night", clicked: false, index: 1 },
+    { name: "2112", clicked: false, index: 3 },
+    { name: "Hemispheres", clicked: false, index: 5 },
+    { name: "Moving Pictures", clicked: false, index: 7 },
+    { name: "Clockwork Angels", clicked: false, index: 19 },
+    { name: "Counterparts", clicked: false, index: 14 },
+    { name: "Permanent Waves", clicked: false, index: 6 },
+    { name: "Rush", clicked: false, index: 0 },
+    { name: "Signals", clicked: false, index: 8 },
+    { name: "Roll the Bones", clicked: false, index: 13 },
+    { name: "A Farewell to Kings", clicked: false, index: 4 },
+    { name: "Grace Under Pressure", clicked: false, index: 9 },
+    { name: "Test for Echo", clicked: false, index: 15 },
+    { name: "Presto", clicked: false, index: 12 },
+    { name: "Snakes and Arrows", clicked: false, index: 18 },
+    { name: "Caress of Steel", clicked: false, index: 2 },
+    { name: "Hold Your Fire", clicked: false, index: 11 },
+    { name: "Feedback", clicked: false, index: 17 },
+    { name: "Vapor Trails", clicked: false, index: 16 },
+    { name: "Power Windows", clicked: false, index: 10 },
   ]);
 
   const [score, setScore] = useState(0);
@@ -30,7 +32,7 @@ function App() {
 
   const checkAlbum = (e) => {
     for (let i = 0; i < entries.length; i++) {
-      if (entries[i].name === e.target.textContent) {
+      if (entries[i].name === e.target.parentNode.id) {
         if (entries[i].clicked) {
           setScore(0);
           resetClicked();
@@ -69,7 +71,12 @@ function App() {
       <div className="card-grid">
         {entries.map((entry, index) => {
           return (
-            <Card key={index} name={entry.name} onClick={checkAlbum}></Card>
+            <Card
+              key={index}
+              name={entry.name}
+              onClick={checkAlbum}
+              index={entry.index}
+            ></Card>
           );
         })}
       </div>
